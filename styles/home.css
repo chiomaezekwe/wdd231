@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1a2c4e;
+}
+
+header h1 {
+    background-color: #1a2c4e;
+    padding: 5rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+header h1 span {
+    color: yellow;
+}
+
+header h2 {
+    background-color: #1a2c4e;
+    padding: 5rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+header h2 span {
+    color: yellow;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.profile-picture {
+    width: 240px;
+    height: 240px;
+    border-radius: 30%;
+    padding: 2rem;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0f0f0f;
+    padding: 10px 0;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+}
+
+nav a:hover {
+    background-color: #333333;
+    color: yellow;
+    text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    margin-top: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+.menu ul {
+    display: flex; 
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.menu li {
+    margin: 0 10px; 
+}
+
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+main ul li {
+    margin: 20px;
+}
+
+
+.course-work, .country-card, .certificate {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    border: 1px solid #cccccc;
+}
+
+.course-work h2, .country-card h2, .certificate h2 {
+    background-color: #1a2c4e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.certificate {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.country-card img {
+    width: 100%;
+    max-width: 256px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.course-card {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+#course-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+}
+
+.completed {
+    background-color: #e9f7e7;
+    border-left: 5px solid  darkgreen;
+}
+
+#course-filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#course-filters button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2c4e;
+    transition: background-color 0.3s ease;
+}
+
+#course-list button:hover {
+    background-color: #1a2c4f;
+}
+
+
+footer {
+    background-color: #1a2c4e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+footer #last-modified {
+    font-size: 1.2rem;
+    color: yellow;
+}
+
