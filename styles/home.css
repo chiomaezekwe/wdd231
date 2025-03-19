@@ -28,7 +28,7 @@ header h1 {
     background-color: #1a2c4e;
     padding: 5rem;
     text-align: center;
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
     line-height: 1.5;
 } 
@@ -41,7 +41,7 @@ header h2 {
     background-color: #1a2c4e;
     padding: 5rem;
     text-align: center;
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
     line-height: 1.5;
 }
@@ -72,7 +72,7 @@ header h2 span {
     font-size: 36px;
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -89,7 +89,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.3rem;
     padding: 10px 10px;
@@ -150,7 +150,7 @@ main ul li {
 
 .course-work h2, .country-card h2, .certificate h2 {
     background-color: #1a2c4e;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
     border-radius: 10px 10px 0 0;
@@ -213,7 +213,7 @@ figcaption {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     background-color: #1a2c4e;
@@ -227,7 +227,7 @@ figcaption {
 
 footer {
     background-color: #1a2c4e;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     font-size: 1.3rem;
