@@ -136,6 +136,8 @@ document.getElementById("cse-courses").addEventListener("click", () => {
 const menuBtn = document.getElementById("menu-toggle");
 const menu = document.querySelector(".menu");
 const closeBtn = document.getElementById("close-menu");
+const overlay = document.querySelector(".overlay");
+
 
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
