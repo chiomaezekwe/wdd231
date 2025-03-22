@@ -134,14 +134,17 @@ document.getElementById("cse-courses").addEventListener("click", () => {
 
 
 const menuBtn = document.getElementById("menu-toggle");
-const menu = document.querySelector(".menu");
-const closeBtn = document.getElementById("close-menu");
+const menu = document.querySelector("nav");
 const overlay = document.querySelector(".overlay");
+const body = document.body;
+const closeBtn = document.getElementById("close-menu");
+
 
 
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
     overlay.classList.toggle("active");
+    body.classList.toggle("no-scroll");
 
     if (menu.classList.contains("active")) {
         menuBtn.textContent = "✖";
@@ -153,6 +156,7 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     menu.classList.remove("active");
     overlay.classList.remove("active");
+    body.classList.remove("no-scroll");
     menuBtn.textContent = "☰";
 });
 
@@ -160,6 +164,7 @@ closeBtn.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
     menu.classList.remove("active");
     overlay.classList.remove("active");
+    body.classList.remove("no-scroll");
     menuBtn.textContent = "☰";
 });
 
