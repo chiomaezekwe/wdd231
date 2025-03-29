@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Eko Chamber of Commerce Directory. Discover various businesses and services.">
+    <meta name="author" content="Ezekwe Chioma Francisca">
+    <title>Eko Chamber of Commerce Directory</title>
+
+    <!--  Open Graph (Facebook) Meta Tags -->
+    <meta property="og:title" content="Eko Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://chiomaezekwe.github.io/wdd231/chamber/images/chamber-image.jpg">
+    <meta property="og:url" content="https://chiomaezekwe.github.io/wdd231/chamber/directory.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/chambers.ico" type="image/x-icon">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/logo-skyscraper.webp" alt="chamber of commerce logo" class="logo" loading="lazy">
+            <div>
+                <h2>Eko</h2>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu-toggle" class="menu-btn">☰</button>
+        </div>
+        <nav class="menu">
+            <button id="close-menu" class="close-btn">✖</button>
+
+            <a href="#">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a> 
+        </nav>
+    </header>
+
+    <main>
+        <h1>Eko Chamber of Commerce Directory</h1>
+        <div class="toggle-grid">
+            <button id="gridViewBtn" class="toggle-btn active">Grid</button>
+            <button id="listViewBtn" class="toggle-btn">List</button>
+        </div>
+        <div id="directory"></div>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <h3>Eko Chamber of Commerce</h3>
+                <p>15 Customs street, Lagos Island, Lagos State, Nigeria</p>
+                <p>info@ekochamberofcommerce.org</p>
+                <p>+234 803 758 6094</p>
+            </div>
+
+            <div class="footer-middle">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.png" alt="Youtube">
+                    
+
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x.png" alt="Twitter">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.jpg" alt="Facebook">
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD 231 Class Project</p>
+                <p>Ezekwe Chioma Francisca</p>
+                <p>&copy; <span id="year"></span>😍 Eko Chamber of Commerce 💕</p> 
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

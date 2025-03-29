@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Adron Homes",      
+    "address": "75 Adron Court, Omole Phase 1, Lagos",
+    "phone": "0805 101 1951",
+    "website": "https://adronhomesproperties.com",
+    "image": "images/adron.webp",
+    "membership_level": 1,
+    "other_info": "Solutions to all your housing needs"
+  },
+
+  {
+    "name": "Bukka Hut",      
+    "address": "Block 69A, Plot, 8 Admiralty Way, Lekki, Lagos",
+    "phone": "0700 055 0055",
+    "website": "https://bukkahut.com",
+    "image": "images/restaurant_bukka-hut.webp",
+    "membership_level": 4,
+    "other_info": "Providing the tastiest meals"
+  },
+
+  {
+    "name": "Innoson Vehicles Manufacturing",      
+    "address": "39 Alh Tokan Street, Alaka Estate, Lagos",
+    "phone": "0803 722 2939",
+    "website": "https://www.innosonvehicles.com",
+    "image": "images/ivm.webp",
+    "membership_level": 1,
+    "other_info": "Think a car? Think IVM! For all range of vehicles"
+  },
+
+  {
+    "name": "Julius Berger Nig. Plc",
+    "address": "15 Ijora Causeway, Lagos",
+    "phone": "0803 906 7000 ",
+    "website": "https://www.julius-berger.com",
+    "image": "images/julius-berger.webp",
+    "membership_level": 2,
+    "other_info": "Solutions to all constructions works & housing"
+  },
+
+  {
+    "name": "Market Square",      
+    "address": "115/117 Ago Palace Way, Okota, Lagos",
+    "phone": "0700 278 6379",
+    "website": "https://marketsquareng.com",
+    "image": "images/marketsquare.webp",
+    "membership_level": 3,
+    "other_info": "Supermarket"
+  },
+
+  {
+    "name": "Romeo's Pizza",      
+    "address": "1st Avenue by 11 Road Junction, Festac, Lagos",
+    "phone": "0908 831 5904",
+    "website": "https://romeospizza.ng",
+    "image": "images/romeos.webp",
+    "membership_level": 2,
+    "other_info": "The best Pizzas and ice creams"
+  },
+
+  {
+    "name": "Spar",      
+    "address": "58 Town Planning Way, Ilupeju, Lagos",
+    "phone": "0815 779 4433",
+    "website": "https://sparnigeria.com",
+    "image": "images/spar-supermarket.webp",
+    "membership_level": 4,
+    "other_info": "Supermarket"
+  },
+
+  {
+    "name": "Tourers Nigeria",      
+    "address": "H7W6+R28, Idimu, Lagos 102213, Lagos",
+    "phone": "0810 364 5646",
+    "website": "https://thetourers.blogspot.com/",
+    "image": "images/tourerng.webp",
+    "membership_level": 4,
+    "other_info": "The best holidays experience with nature"
+  },
+
+  {
+    "name": "Wakanow",      
+    "address": "Plot 8 Elegushi Beach Road, lekki, Lagos",
+    "phone": "0201 700 8200",
+    "website": "https://www.wakanow.com", 
+    "image": "images/wakanow.webp",
+    "membership_level": 2,
+    "other_info": "Solutions to all your travel needs"
+  }    
+]
