@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join the Eko Chamber of Commerce to connect with local businesses, explore networking opportunities, and stay updated on the latest events.">
+    <meta name="author" content="Ezekwe Chioma Francisca">
+    <title>Eko Chamber of Commerce Home Page</title>
+
+    <link rel="canonical" href="https://chiomaezekwe.github.io/wdd231/chamber/index.html">
+
+
+    <!--  Open Graph (Facebook) Meta Tags -->
+    <meta property="og:title" content="Eko Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://chiomaezekwe.github.io/wdd231/chamber/images/chamber-image.jpg">
+    <meta property="og:url" content="https://chiomaezekwe.github.io/wdd231/chamber/index.html">
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/chambers.ico" type="image/x-icon">
+
+    <!-- JavaScript -->
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/logo-skyscraper.webp" alt="chamber of commerce logo" class="logo" loading="lazy">
+            <div>
+                <h2>Eko</h2>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu-toggle" class="menu-btn">☰</button>
+        </div>
+        <nav class="menu">
+            <button id="close-menu" class="close-btn">✖</button>
+
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a> 
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/chamber-cityscape.jpg" alt="Eko City" loading="lazy">
+            <div class=" hero-content">
+                <h3>Welcome to Eko Chamber of Commerce</h3>
+                <a href="#" class="btn">Join Us</a>
+            </div>
+        </section>
+
+        <div class="home">
+            <h1>Home</h1>
+        </div>
+
+        <!-- Events, Weather, Forecast -->
+        <section class="info-sections">
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><strong>April 12, 2025 | 11:00 AM:</strong> Eko Business Summit: Reimagine – Eko Hotels & Suites Victoria Island, Lagos</li>
+                    <li><strong>April 23, 2025 | 9:00 AM:</strong> Export Marketing Workshop – Civic Center Ikoyi, Lagos</li>
+                    <li><strong>April 25, 2025 | 10:00 AM:</strong> 2025 Agro Food Summit – Raddison Blu Ikeja, Lagos</li>
+                    <li><strong>May 12-24, 2025 | 8:00 AM:</strong> Tech Unite Africa Bootcamp – Sheraton Hotel Ikeja, Lagos</li>
+                </ul>
+            </div>
+
+            <div class="weather">
+                <div class="weather-header">
+                    <img id="graphic" src="images/default-icon.png" alt="">
+                    <h2>Weather</h2>
+                </div>
+
+                <div class="weather-info">
+                    <p><strong>City:</strong> <span id="city"></span></p>
+                    <p><strong>Description:</strong> <span id="description"></span></p>
+                    <p><strong>Temperature:</strong> <span id="temperature">--</span>°C</p>
+                    <p><strong>High:</strong> <span id="high-temp">--</span>°C</p>
+                    <p><strong>Low:</strong> <span id="low-temp">--</span>°C</p>
+                    <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+                    <p><strong>Sunrise:</strong> <span id="sunrise">--</span></p>
+                    <p><strong>Sunset:</strong> <span id="sunset">--</span></p>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h2>Forecast</h2>
+                <div class="forecast-container" id="forecast">
+                </div>
+            </div>
+
+        </section>
+
+        <div class="spotlights"></div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <h3>Eko Chamber of Commerce</h3>
+                <p>15 Customs street, Lagos Island, Lagos State, Nigeria</p>
+                <p>info@ekochamberofcommerce.org</p>
+                <p>+234 803 758 6094</p>
+            </div>
+
+            <div class="footer-middle">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.png" alt="Youtube">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x.png" alt="Twitter">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.jpg" alt="Facebook">
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD 231 Class Project</p>
+                <p>Ezekwe Chioma Francisca</p>
+                <p>&copy; <span id="year"></span>😍 Eko Chamber of Commerce 💕</p> 
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
