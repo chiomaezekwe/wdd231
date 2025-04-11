@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Choose to join the Eko Chamber of Commerce membership program today! Do not miss the exclusive benefits that comes along with it. Explore networking opportunities, and grow your business to the next level.">
+    <meta name="author" content="Ezekwe Chioma Francisca">
+    <title>Eko Chamber of Commerce Membership Join Page</title>
+
+    <link rel="canonical" href="https://chiomaezekwe.github.io/wdd231/chamber/index.html">
+
+    <!-- Open Graph Meta Tags-->
+    <meta property="og:title" content="Eko Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://chiomaezekwe.github.io/wdd231/chamber/images/chamber-image.jpg">
+    <meta property="og:url" content="https://chiomaezekwe.github.io/wdd231/chamber/index.html">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"></noscript>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/join.css">
+   
+    <!-- Favicon -->
+    <link rel="icon" href="images/chambers.ico" type="image/x-icon">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/logo-skyscraper.webp" alt="chamber of commerce logo" class="logo" loading="lazy">
+            <div>
+                <h2>Eko</h2>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu-toggle" class="menu-btn">☰</button>
+        </div>
+        <nav class="menu">
+            <button id="close-menu" class="close-btn"></button>
+            <a href="index.html" id="home-link">Home</a>
+            <a href="directory.html" id="directory-link">Directory</a>
+            <a href="join.html" id="join-link">Join</a>
+            <a href="#">Discover</a> 
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join Us</h1>
+        <div class="form-membership-container">
+            <div class="application-form">
+                <h2>Membership Application Form</h2>
+
+                <form method="GET" action="thankyou.html" class="designOne">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                            title="First Name" placeholder="Enter First name"></label>
+                    <label>Last Name <input type="text" name="last" required
+                            title="Last Name" placeholder="Enter Last Name"></label>
+                    <label>Organizational Title <input type="text" name="org-title" title="Organizational Title"
+                            autocomplete="organization-title" pattern="^[A-Za-z\-\s]{7,}$"
+                            placeholder="Minimum of 7 characters"></label>
+                    <label>Email <input type="email" name="email" required placeholder="example@email.com"
+                            title="Email" autocomplete="email"></label>
+                    <label>Mobile Phone <input type="tel" name="phone" required autocomplete="tel"
+                            title="Phone Number" placeholder="123-456-7890"></label>
+                    <label>Business/Organization Name <input type="text" name="organization" required
+                            autocomplete="organization" title="Business/Organization Name" 
+                            placeholder="Enter Business/Organisation Name"></label>
+
+                    <h3>Business/Organization Description</h3>
+                    <label>
+                        <textarea name="description" title="Brief description of business/ organization" rows="4"
+                            cols="50" placeholder="Brief description of Business/ Organization"></textarea>
+                    </label>
+
+                    <div class="radio-group">
+                        <h3>Membership Level</h3>
+                        <label><input type="radio" name="membership" value="Non Profit" checked> <span>Non Profit Membership - No Fee</span></label>
+                        <label><input type="radio" name="membership" value="Bronze"> <span>Bronze Membership</span></label>
+                        <label><input type="radio" name="membership" value="Silver"> <span>Silver Membership</span></label>
+                        <label><input type="radio" name="membership" value="Gold"> <span>Gold Membership</span></label>
+                    </div>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Apply for Membership">
+
+                </form>
+            </div>
+
+            <!-- Modals -->
+            <section class="membership-container">
+                <h2>Membership Levels</h2>
+                <div class="membership-card" id="np-card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button id="openButton1">Learn More</button>
+                    <dialog id="dialogBox1">
+                        <h2>Non Profit Membership</h2>
+                        <p><strong>Benefits include:</strong></p>
+                        <ul>
+                            <li>Free Membership (No annual fee), and access to basic services and support.</li>
+                            <li>A directory listing on the organization's website to promote visibility.</li>
+                            <li>Access to essential resources such as free toolkits and templates.</li>
+                            <li>Ability to join the member community for networking opportunities with like-minded non-profit organizations.</li>
+                            <li>Regular updates on relevant industry news, grants, and funding opportunities.</li>
+                            <li>Discounted or free access to select events and webinars hosted by the organization.</li>
+                            <li>Access to public industry reports, research, and resources available to non-profits.</li>
+                        </ul>
+                        <p><strong>Cost:</strong> Free</p>
+                        <button id="closeButton1" class="close-button">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="membership-card" id="bronze-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="openButton2">Learn More</button>
+                    <dialog id="dialogBox2">
+                        <h2>Bronze Membership</h2>
+                        <p><strong>Benefits include:</strong></p>
+                        <ul>
+                            <li>Receive discounted tickets to major industry events, conferences, and webinars.</li>
+                            <li>A special (Bronze Member) badge on your organization’s profile to show your support for the community.</li>
+                            <li>Access to a library of exclusive webinars and educational resources that are not available to free members.</li>
+                            <li>Limited promotion of your organization on the website or through newsletters.</li>
+                            <li>Invitation to networking events and meet-ups to connect with other members.</li>
+                            <li>Enhanced access to premium toolkits and templates tailored to organizations at your level.</li>
+                            <li>Priority registration for events and workshops with early access to ticket sales.</li>
+                            <li>Access to member-only content such as case studies, best practices, and industry insights.</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $40 annual fee</p>
+                        <button id="closeButton2" class="close-button">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="membership-card" id="silver-card">
+                    <h3>Silver Membership Level</h3>
+                    <button id="openButton3">Learn More</button>
+                    <dialog id="dialogBox3">
+                        <h2>Silver Membership</h2>
+                        <p><strong>Benefits include:</strong></p>
+                        <ul>
+                            <li>Complimentary access to one major event (conference, training workshop or gala) each year.</li>
+                            <li>A special (Silver Member) badge on your organization’s profile to show your support for the community.</li>
+                            <li>A featured spotlight article on the website, social media, or newsletter highlighting your organization’s achievements.</li>
+                            <li>25% discount on paid advertising opportunities, including website banners, sponsored posts, and newsletter features.</li>
+                            <li>Access to exclusive special interest groups for deeper collaboration in specific fields or industries.</li>
+                            <li>Access to discounted or free online courses, certifications, and workshops that help build organizational capacity.</li>
+                            <li>Invitations to exclusive networking events, roundtables, and leadership forums with industry leaders and partners.</li>
+                            <li>Full access to an expanded library of resources, including detailed industry reports, research, and analytics.</li>
+                            <li>Discounts on affiliated products, software, or services that support your organization’s operations.</li>
+                            <li>Priority access to customer service or member support for assistance with events, registrations, or resources.</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $80 annual fee</p>
+                        <button id="closeButton3" class="close-button">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="membership-card" id="gold-card">
+                    <h3>Gold Membership Level</h3>
+                    <button id="openButton4">Learn More</button>
+                    <dialog id="dialogBox4">
+                        <h2>Gold Membership</h2>
+                        <p><strong>Benefits include:</strong></p>
+                        <ul>
+                            <li>Free exclusive VIP access to all major events, conferences, and workshops for you and your team (including VIP access with exclusive seating).</li>
+                            <li>Prominent display of a gold member badge on your profile to show your leadership in the community.</li>
+                            <li>Premium Advertising: Free or heavily discounted premium advertising on the website, social media channels, and in newsletters. Featured member status across all communications.</li>
+                            <li>Opportunity for a featured article or story in the organization’s official publications, website, or social media accounts.</li>
+                            <li>Invitation to the exclusive Gold Member Leadership Roundtable where top members collaborate and share insights.</li>
+                            <li>Invitations to high-level leadership workshops, retreats, and strategy sessions with industry experts.</li>
+                            <li>Priority access to event registration and guaranteed seating for all conferences and events.</li>
+                            <li>Opportunity to collaborate with the organization on strategic initiatives, joint ventures, and co-branded events.</li>
+                            <li>Special access to high-profile networking events with decision-makers, influencers, and major stakeholders in your industry.</li>
+                            <li>Co-branded marketing materials and promotion, increasing your organization’s visibility within the community.</li>
+                            <li>Early access to groundbreaking research, market reports, and insights that are critical for industry leaders.</li>
+                            <li>Customized Member Support, providing a dedicated account manager or concierge service to assist with member needs, event planning, and marketing opportunities.</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $150 annual fee</p>
+                        <button id="closeButton4" class="close-button">Close</button>
+                    </dialog>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <h3>Eko Chamber of Commerce</h3>
+                <p>15 Customs street, Lagos Island, Lagos State, Nigeria</p>
+                <p>info@ekochamberofcommerce.org</p>
+                <p>+234 803 758 6094</p>
+            </div>
+
+            <div class="footer-middle">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.png" alt="Youtube">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x.png" alt="Twitter">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.jpg" alt="Facebook">
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD 231 Class Project</p>
+                <p>Ezekwe Chioma Francisca</p>
+                <p>&copy; <span id="year"></span>😍 Eko Chamber of Commerce 💕</p> 
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

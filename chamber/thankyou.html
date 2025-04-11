@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Eko Chamber of Commerce Directory. Discover various businesses and services.">
+    <meta name="description" content="Thank you for joining the Eko Chamber of Commerce">
     <meta name="author" content="Ezekwe Chioma Francisca">
-    <title>Eko Chamber of Commerce Directory</title>
 
-    <!--  Open Graph (Facebook) Meta Tags -->
-    <meta property="og:title" content="Eko Chamber of Commerce Directory">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://chiomaezekwe.github.io/wdd231/chamber/images/chamber-image.jpg">
-    <meta property="og:url" content="https://chiomaezekwe.github.io/wdd231/chamber/directory.html">
-
-    <!-- Favicon -->
-    <link rel="icon" href="images/chambers.ico" type="image/x-icon">
+    <title>Eko Chamber of Commerce</title>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/join.css">
 
-    <!-- JavaScript -->
-    <script src="scripts/directory.js" defer></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+
+     <!-- Favicon -->
+     <link rel="icon" href="images/chambers.ico" type="image/x-icon">
+
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="profile">
@@ -37,8 +34,7 @@
             <button id="menu-toggle" class="menu-btn">☰</button>
         </div>
         <nav class="menu">
-            <button id="close-menu" class="close-btn">✖</button>
-
+            <button id="close-menu" class="close-btn"></button>
             <a href="index.html" id="home-link">Home</a>
             <a href="directory.html" id="directory-link">Directory</a>
             <a href="join.html" id="join-link">Join</a>
@@ -47,13 +43,36 @@
     </header>
 
     <main>
-        <h1>Eko Chamber of Commerce Directory</h1>
-        <div class="toggle-grid">
-            <button id="gridViewBtn" class="toggle-btn active">Grid</button>
-            <button id="listViewBtn" class="toggle-btn">List</button>
+        <div class="thankyou-container">
+            <h1>Thank You for Your Applying</h1>
+
+            <div class="confirmation-card">
+                <h2>Your Membership Application Details</h2>
+
+                <div class="confirmation-details">
+                    <p><strong>Submission Date:</strong> <span id="submission-date"></span></p>
+                    <p><strong>Name:</strong> <span id="full-name"></span></p>
+                    <p><strong>Email:</strong> <span id="user-email"></span></p>
+                    <p><strong>Phone:</strong> <span id="user-phone"></span></p>
+                    <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+                    <p><strong>Membership Level:</strong> <span id="membership-level"></span></p>
+                </div>
+
+                <div class="lists">
+                    <h3>What's Next?</h3>
+                    <ul>
+                        <li> A confirmation email will be sent to you within 24 hours</li>
+                        <li> You'll be contacted for additional information if required</li>
+                        <li> Your membership package will be sent upon application approval</li>
+                    </ul>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="index.html" class="btn">Return to Home</a>
+                    <a href="directory.html" class="btn">View Business Directory</a>
+                </div>
+            </div>
         </div>
-        <div id="directory"></div>
-        
     </main>
 
     <footer>
@@ -68,8 +87,6 @@
             <div class="footer-middle">
                 <a href="https://youtube.com" target="_blank">
                     <img src="images/youtube.png" alt="Youtube">
-                    
-
                 </a>
                 <a href="https://twitter.com" target="_blank">
                     <img src="images/x.png" alt="Twitter">
@@ -88,4 +105,5 @@
         </div>
     </footer>
 </body>
+
 </html>
