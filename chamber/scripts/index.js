@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
         // Highlight the active page link
-        const links = document.querySelectorAll(".menu-links a");
+        const links = document.querySelectorAll(".menu a");
         links.forEach(link => {
             if (link.getAttribute("href") === currentPage) {
                 link.classList.add("active-page");
