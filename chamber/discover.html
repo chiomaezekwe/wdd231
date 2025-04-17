@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Eko Chamber of Commerce Directory. Discover various businesses and services.">
+    <meta name="description" content="Welcome to Eko Chamber of Commerce Directory. Discover various businesses and services. Learn more about Eko">
     <meta name="author" content="Ezekwe Chioma Francisca">
-    <title>Eko Chamber of Commerce Directory</title>
+    <title>Eko Chamber of Commerce Discovery</title>
 
     <!--  Open Graph (Facebook) Meta Tags -->
     <meta property="og:title" content="Eko Chamber of Commerce Directory">
@@ -17,15 +18,16 @@
     <link rel="icon" href="images/chambers.ico" type="image/x-icon">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
     <!-- JavaScript -->
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="profile">
@@ -37,8 +39,7 @@
             <button id="menu-toggle" class="menu-btn">☰</button>
         </div>
         <nav class="menu">
-            <button id="close-menu" class="close-btn">✖</button>
-
+            <button id="close-menu" class="close-btn"></button>
             <a href="index.html" id="home-link">Home</a>
             <a href="directory.html" id="directory-link">Directory</a>
             <a href="join.html" id="join-link">Join</a>
@@ -47,14 +48,46 @@
     </header>
 
     <main>
-        <h1>Eko Chamber of Commerce Directory</h1>
-        <div class="toggle-grid">
-            <button id="gridViewBtn" class="toggle-btn active">Grid</button>
-            <button id="listViewBtn" class="toggle-btn">List</button>
+        <h1>Discover Eko Chamber of Commerce</h1>
+
+        <div id="page-content">
+            <div id="left-column">
+                <div class="visitor-info">
+                    <h2>Eko o ni baje</h2>
+                    <div id="visitor-message" class="visitor-message"></div>
+                </div>
+
+                <div class="demographics">
+                    <h2>Overview</h2>
+                    <p>Eko, the commercial hub of Lagos Island. Located right in heart of Lagos state the largest commercial metropolis of Nigeria.
+                        Sprawling inland from the Gulf of Guinea across Lagos Lagoon. The home to the National Museum, 
+                        where our cultural artifacts and craftworks are displayed, and the Freedom Park, 
+                        once a colonial-era prison. But now a major venue for concerts and public events. 
+                    </p>
+
+                    <h3>Key Facts:</h3>
+                    <ul>
+                        <li>Elevation: 5 meters</li>
+                        <li>Area: 1,171 km² (452.23 sq mi)</li>
+                        <li>Time Zone: UTC+1</li>
+                        <li>Climate: Tropical savanna</li>
+                    </ul>
+
+                    <h3>Festivals:</h3>
+                    <p>The Eyo Carnival, Lagos Carnival, Eko International Film Festival, 
+                        Lagos Black Heritage Carnival, and Lagos Food Festival.
+                    </p>
+                </div>
+            </div>
+
+            <div id="right-column">
+                <div id="discover-container">
+                    <!-- Cards to be dynamically populated here -->
+                </div>
+            </div>
         </div>
-        <div id="directory"></div>
-        
     </main>
+
 
     <footer>
         <div class="footer">
@@ -67,9 +100,7 @@
 
             <div class="footer-middle">
                 <a href="https://youtube.com" target="_blank">
-                    <img src="images/youtube.png" alt="Youtube">
-                    
-
+                    <img src="images/youtube.png" alt="Youtube">                
                 </a>
                 <a href="https://twitter.com" target="_blank">
                     <img src="images/x.png" alt="Twitter">
@@ -88,4 +119,5 @@
         </div>
     </footer>
 </body>
+
 </html>

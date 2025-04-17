@@ -159,6 +159,7 @@ figcaption {
     font-style: italic;
     color: #000000;
     margin-top: 5px;
+    font-weight: bold;
 }
 
 #course-filters button:focus {
