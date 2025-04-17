@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "title": "Grow Basil on Your Balcony",
+      "description": "An easy guide for starting basil in containers.",
+      "skill": "Beginner",
+      "category": "Herbs",
+      "time": "2 weeks"
+    },
+    {
+      "id": 2,
+      "title": "DIY Self-Watering Planter",
+      "description": "Make a self-watering pot using recycled bottles.",
+      "skill": "Intermediate",
+      "category": "DIY",
+      "time": "1 hour"
+    }
+    // ... up to 15 items
+  ]
