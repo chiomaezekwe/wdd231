@@ -1,0 +1,55 @@
+[
+    {
+      "diy-name": "🪴🌱Balcony-to-Table Challenge I",      
+      "diy-task": "Re-grow Lettuce from Scraps (No Seeds Needed!)",
+      "duration": "30 days (4 weeks, and 2 days)",
+      "image": "images/lettuce.jpg",
+      "challenge_no": 1,
+      "other_info": "Solutions to all your housing needs"
+    },
+  
+    {
+      "diy-name": "🌿♻️Compost Across Cities",      
+      "diy-task": "Start Your Own Balcony Compost Bin",
+      "duration": "16-32 days (4-8 weeks)",
+      "image": "images/compost.webp",
+      "challenge_no": 2,
+      "other_info": "Solutions to all your housing needs"
+    },
+  
+    {
+      "diy-name": "🌼🦋Rooftop Pollinator Gardens",      
+      "diy-task": "Bring the Buzz to the Roof",
+      "duration": "63 days (9 weeks)",
+      "image": "images/rooftop-garden.webp",
+      "challenge_no": 3,
+      "other_info": "Solutions to all your housing needs"
+    },
+  
+    {
+      "diy-name": "🌿🌼Upcycled Vertical Garden Challenge",      
+      "diy-task": "Edible/ Ornamental Garden Wall",
+      "duration": "70 days (10 weeks)",
+      "image": "images/wall-garden.webp",
+      "challenge_no": 4,
+      "other_info": "Solutions to all your housing needs"
+    },
+  
+    {
+      "diy-name": "🪴🌱Balcony-to-Table Challenge II",      
+      "diy-task": "Re-grow Basil & Mint from Cuttings",
+      "duration": "30 days (4 weeks 2 days)",
+      "image": "images/basil-leaves.jpg",
+      "challenge_no": 5,
+      "other_info": "Solutions to all your housing needs"
+    },
+  
+    {
+      "diy-name": "♻️🍄Kitchen Waste Farm Challenge",      
+      "diy-task": "Re-grow Lettuce from Scraps (No Seeds Needed!)",
+      "duration": "36-49 days(6 - 7 weeks)",
+      "image": "images/mushrooms.jpg",
+      "challenge_no": 6,
+      "other_info": "Solutions to all your housing needs"
+    }
+]

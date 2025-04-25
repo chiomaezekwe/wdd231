@@ -1,0 +1,380 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f5;
+    color: #333333;
+    padding: 0 1rem;
+  }
+  
+  /* Header & Navigation */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 1rem 2rem; */
+    padding: 0.5rem 1rem;  /* Reduce overall padding */
+    background-color: #2f4f4f;
+  }
+
+.profile-container {
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+ 
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 30%;
+    padding: 0.5rem;
+  }
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem 1rem;  /* Less space inside navbar */
+    height: auto;          /* Let it shrink naturally */
+  }
+  
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /*Increased font size */
+  }
+  
+.navbar a:hover,
+.navbar a.active-page {
+    color: #FFD700;
+    /*color: #90ee90; /* light green hover */
+  }
+
+.menu-btn,
+.close-btn {
+    display: none;
+    background: #90ee90;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+
+
+/* Main Section */
+  
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+main section {
+    margin-bottom: 2.5rem;
+  }
+  
+h1, h2 {
+    color: #2f4f4f;
+    background-color: #90ee90;
+    margin-bottom: 1rem;
+  }
+
+  
+ul {
+    padding-left: 1.5rem;
+  }
+  
+ul li {
+    margin-bottom: 1rem;
+    list-style-type: disc;
+  }
+
+/*Gallery display section Styling*/
+
+#directory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Toggle Button Style */
+.toggle-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.toggle-btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.toggle-btn.active {
+    background-color: #0f5d09;
+}
+
+.business-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.business-card img {
+    max-width: 300px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+.business-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* List View */
+.list-view {
+    display: block !important;
+}
+
+.list-view .business-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    text-align: left;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.list-view .business-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.list-view .business-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #4B6D94;
+}
+
+.list-view .business-card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #555555;
+}
+
+.list-view .business-card a {
+    font-size: 0.9rem;
+    color: #2b4373;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+  
+  /* Footer Styling */
+  
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-right {
+    width: 30%;
+    text-align: center;
+}
+
+.footer-right a img {
+    width: 30px;
+    margin: 0 10px;
+    height: 30px; /* Prevents layout shifts */
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-right a img:hover {
+    transform: scale(1.2);
+}
+
+footer a {
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+  
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-left,
+    .footer-right {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+
+  /* Media Queries */
+
+@media (max-width: 768px) {
+    .footer-left,
+    .footer-right {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+    
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #1e2a33;
+        padding: 20px;
+        z-index: 1000;
+    }
+    
+    
+    .navbar a {
+        font-size: 1.5rem;
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .profile {
+        justify-content: space-between;
+        display: flex;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 80%;
+        height: auto;
+    }
+    .toggle-grid {
+        flex-direction: column;
+    }
+    
+    .toggle-btn {
+        padding: 12px 30px;
+    }
+    
+    
+    .menu.active {
+        display: flex;
+    }
+    
+    .menu-btn {
+        display: flex;
+    }
+    
+    .close-btn {
+        display: flex;
+    }
+
+    
+    #directory {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .list-view .business-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .list-view .business-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .list-view .business-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .list-view .business-card p {
+        font-size: 0.85rem;
+    }
+    
+    
+    #directory {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    
+    
+    @media (max-width: 480px) {
+    #directory {
+        grid-template-columns: 1fr;
+    }
+    }
+    
+  

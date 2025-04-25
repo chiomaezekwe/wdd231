@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Basil",      
+    "description": "Basil, also known as Scent leaf in Nigeria (Nchanwu in igbo and Efirin in yoruba langauges), is a culinary herb of the family Lamiaceae. It is a tender plant, and is used in cuisines worldwide. In Western cuisine, the generic term basil, refers to the variety also known as Genovese basil or sweet basil. Basil is native to tropical regions from Central Africa to Southeast Asia.",
+    "image": "images/basil-leaves.jpg",
+    "other_info": "Basil offers numerous health benefits, including its rich source of antioxidants, anti-inflammatory properties, and potential to boost mental health. It's also a good source of vitamins and minerals like vitamin C, calcium, magnesium, potassium, and iron. Additionally, basil may help with digestion, reduce blood pressure, and even have antibacterial properties."
+  },
+
+  {
+    "name": "Mint",      
+    "description": "Mints are aromatic, almost exclusively perennial herbs. They have wide-spreading underground and overground stolons and erect, square, branched stems.",
+    "image": "images/mintleaves.jpg",
+    "other_info": "Mint offers a wide range of health benefits, from improving digestion and freshening breath to soothing irritated skin and reducing cold symptoms. It also contains compounds like rosmarinic acid and menthol that act as antioxidants and decongestants, respectively. Additionally, mint can help with stress management and may even support brain health and cognitive function."
+  },
+
+  {
+    "name": "Rosemary",      
+    "description": "Rosemary is a shrub with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers, native to the Mediterranean region.",
+    "image": "images/rosemary.jpg",
+    "other_info": "Garlic contains antioxidants and anti-inflammatory compounds. Boosts mood and aids mental health. Enhances memory and concentration. Neurological protection. Good for skin health."
+  },
+
+  {
+    "name": "Garlic",      
+    "description": "Garlic is a species of a bulbous flowering plant in the genus Allium. Its close relatives include the onion, shallot, leek, chive, Welsh onion and Chinese onion.",
+    "image": "images/garlic.jpg",
+    "other_info": "Eating garlic may help keep your bones healthy, reduce the risk of heart attacks and lower blood pressure as it acts like an anticoagulant. While more studies are needed, it's believed that garlic may minimise the growth of cancer cells and potentially improve exercise performance and energy levels."
+  },
+
+  {
+    "name": "Ginger",      
+    "description": "Ginger is a flowering plant whose rhizome, ginger root or ginger, is widely used as a spice and a folk medicine. It is a herbaceous perennial which grows annual pseudostems about one meter tall bearing narrow leaf blades.",
+    "image": "images/ginger.jpg",
+    "other_info": "Ginger offers a wide range of health benefits, including alleviating nausea, reducing inflammation, boosting immunity, and potentially helping with weight loss and diabetes management. It's also been used traditionally to address digestive issues, menstrual cramps, and arthritis pain."
+  },
+
+  {
+    "name": "Lemongrass",      
+    "description": "Lemongrass is known as barbed wire grass, silky heads, Cochin grass, Malabar grass, oily heads, citronella grass or fever grass, is a genus of Asian, African, Australian, and tropical island plants in the grass family.",
+    "image": "images/lemongrass.jpg",
+    "other_info": "Research has found several potential health benefits of lemongrass. Lemongrass is a rich source of flavonoids and phenolic compounds, which contain antioxidants. It's also an effective antibacterial and antifungal agent that contains anti-inflammatory and antioxidant properties."
+  },
+
+  {
+    "name": "Tomatoes",      
+    "description": "The tomato, Solanum lycopersicum, is a plant whose fruit is an edible berry that is eaten as a vegetable. The tomato is a member of the nightshade family that includes tobacco, potato, and chili peppers. It originated from and was domesticated in western South America.",
+    "image": "images/tomatoes.jpeg",
+    "other_info": "Tomatoes are loaded with a substance called lycopene which gives them their bright red color and helps protect them from the ultraviolet rays of the sun. And, helps protect your cells from damage. Tomatoes also have potassium, vitamins B and E, and other nutrients."
+  },
+
+  {
+    "name": "Lettuce",      
+    "description": "lettuce, (Lactuca sativa), annual leaf vegetable of the aster family (Asteraceae). Most lettuce varieties are eaten fresh and are commonly served as the base of green salads.",
+    "image": "images/lettuce.jpeg",
+    "other_info": "Lettuce is generally a rich source of vitamins K and A, though the nutritional quality varies, depending on the variety."
+  },
+
+  {
+    "name": "Cabbage",      
+    "description": "Cabbage is a popular leafy green vegetable, a member of the Brassica oleracea species. It comes in various colors, including green, red, and purple, and can be eaten raw or cooked.",
+    "image": "images/cabbage.jpeg",
+    "other_info": "Cabbage is known for its nutritional value, being a good source of vitamins C and K, as well as fiber. "
+  },
+  
+  {
+	"name": "Pineapple",      
+	"description": "Pineapple (Ananas comosus) is a tropical fruit known for its sweet and tangy taste, distinctive aroma, and unique shape, which resembles a pinecone.",
+	"image": "images/pineapple.jpeg",
+	"other_info": "It's a nutritious fruit rich in vitamin C, manganese, and enzymes, offering various health benefits like improved digestion, boosted immunity, and inflammation reduction."
+  },
+  
+  {
+	"name": "Eggplant",      
+	"description": "Eggplant, also known as aubergine or brinjal, is a fruit, botanically a berry, that is commonly used as a vegetable in cooking. It's a member of the nightshade family and is native to South Asia. Eggplant comes in various colors, including purple, white, and green, and is used in many cuisines worldwide.",
+	"image": "images/eggplant.jpg",
+	"other_info": "Regular consumption of eggplant helps reduce LDL cholesterol and triglyceride levels, as it contains nasunin and anthocyanins, which are powerful antioxidants that help prevent heart problems such as atherosclerosis, stroke and heart attack."
+  },
+  
+  {
+	"name": "Bell Pepper",      
+	"description": "Cabbage is a popular leafy green vegetable, a member of the Brassica oleracea species. It comes in various colors, including green, red, and purple, and can be eaten raw or cooked.",
+	"image": "images/bell-pepper.jpeg",
+	"other_info": "Bell peppers are rich in antioxidants, which are associated with better health and protection against conditions like heart disease and cancer. For instance, peppers are especially rich in antioxidant vitamins including vitamins C, E and beta-carotene"
+  },
+  
+  {
+	"name": "Okra",      
+	"description": "okra, (Abelmoschus esculentus), herbaceous hairy annual plant of the mallow family (Malvaceae) and its edible fruit. It is native to the tropics of the Eastern Hemisphere and is widely cultivated or naturalized in the tropics and subtropics of the Western Hemisphere. Only the tender unripe fruit is eaten.",
+	"image": "images/okra.jpg",
+	"other_info": "Okra contains beneficial antioxidants, fiber, vitamins and minerals. Its disease-fighting nutrients promote heart health, blood sugar management and better digestion. Okra also boosts bone health due to its calcium and vitamin K content."
+  },
+  
+  {
+	"name": "Spinach",      
+	"description": "Spinach (Spinacia oleracea) is a leafy green flowering plant native to Central and Western Asia. It is of the order Caryophyllales, family Amaranthaceae, subfamily Chenopodioideae. Its leaves are a common vegetable consumed either fresh or after storage, using preservation techniques by canning, freezing, or dehydration. It may be eaten cooked or raw, and the taste differs considerably; the high oxalate content may be reduced by steaming.",
+	"image": "images/spinach.jpg",
+	"other_info": " improving blood glucose control in people with diabetes, lowering the risk of cancer, and improving bone health."
+  },
+  
+  {
+	"name": "Aloe Vera",      
+	"description": "Aloe vera is a succulent plant species of the genus Aloe. It is widely distributed, and is considered an invasive species in many world regions. An evergreen perennial, it originates from the Arabian Peninsula, but also grows wild in tropical, semi-tropical, and arid climates around the world. It is cultivated for commercial products, mainly as a topical treatment used over centuries. The species is considered attractive for decorative purposes, and is often used indoors as a potted plant.",
+	"image": "images/aloe-vera.jpeg",
+	"other_info": "Aloe vera is a medicinal plant with antioxidant and antibacterial properties with several reported benefits, ranging from the treatment of inflammatory skin conditions to promoting gastrointestinal health. Its benefits includes reducing dental plaque, accelerating wound healing, improving skin barrier function, and managing blood sugar."
+  }
+]

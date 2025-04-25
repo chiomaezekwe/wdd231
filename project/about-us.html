@@ -3,15 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Green & Grounded</title>
-  <link rel="canonical" href="https://chiomaezekwe.github.io/wdd231/project/index.html">
-
-  <!-- Open Graph Meta Tags-->
-  <meta property="og:title" content="Green and Grounded">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://chiomaezekwe.github.io/wdd231/Project/images/chamber-image.jpg">
-  <meta property="og:url" content="https://chiomaezekwe.github.io/wdd231/project/index.html">
-
+  <meta name="description" content="Green & Grounded boosts communities with urban gardening, 
+  sustainability education, and eco-projects, encouraging people to grow, breathe, and live a greener 
+  lifestyle every day.">
+  <meta name="author" content="Ezekwe Chioma Francisca">
+  <title>Green & Grounded</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,22 +15,22 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"></noscript>
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/about-us.css">
   
   <!-- Favicon -->
   <link rel="icon" href="images/urban-n-garden.ico" type="image/x-icon">
 
-  <script src="scripts/index.js" defer></script>
-  <script src="scripts/thankyou.js" defer></script>
-  <script type="module" src="js/main.js" defer></script>
+  <script src="scripts/about-us.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="profile">
-        <img src="images/logo.png" alt="green and grounded logo" class="logo" loading="lazy">
-        <button id="menu-toggle" class="menu-btn">☰</button>
-      </div>
+  <header class="profile-container">
+    <div class="logo">
+      <img src="images/logo.png" alt="green and grounded logo" class="logo" loading="lazy">
+      <button id="menu-toggle" class="menu-btn">☰</button>
+    </div>
+
+    <div>
+      <nav class="navbar">
         <button id="close-menu" class="close-btn">✖</button>
 
         <a href="index.html" id="home-link">Home</a>
@@ -42,27 +38,60 @@
         <a href="project-initiatives.html" id="project-initiatives-link">Projects</a>
         <a href="blog.html" id="blog-link">Blog</a>
         <a href="contact-us.html" id="contact-us-link">Contact Us</a>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section>
       <h1>Our Story</h1>
-      <p>Green & Grounded started with a seed—literally. Our founder, a city dweller with limited space, wanted to grow fresh herbs on her apartment balcony. That simple desire sparked a community-driven movement to inspire urbanites everywhere to live sustainably, one pot at a time.</p>
+      <p>
+        Green & Grounded started with a seed—literally. Our founder, 
+        a city dweller with limited space, wanted to grow fresh herbs on her apartment balcony. 
+        That simple desire sparked a community-driven movement to inspire urbanites everywhere 
+        to live sustainably, one pot at a time.
+      </p>
     </section>
-
     <section>
       <h2>Our Philosophy</h2>
       <ul>
         <li><strong>Accessibility:</strong> Anyone can grow, no matter the space.</li>
         <li><strong>Education:</strong> We provide real-world, actionable guides.</li>
-        <li><strong>Community:</strong> We're stronger together. Share, learn, grow.</li>
+        <li><strong>Community:</strong> We are stronger together. Share, learn, and grow.</li>
       </ul>
     </section>
+    <section>
+      <h2>Gallery</h2>
+      <div class="toggle-grid">
+        <button id="gridViewBtn" class="toggle-btn active">Grid</button>
+        <button id="listViewBtn" class="toggle-btn">List</button>
+      </div>
+      <div id="directory"></div>
+    </section>
+    
   </main>
-
   <footer>
-    <p>&copy; 2025 Green & Grounded</p>
-  </footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Green & Ground</h3>
+        <p>Grow to Breathe!</p>
+        <p>info@greennground.org</p>
+        <p>+234 803 758 6094</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://youtube.com" target="_blank">
+          <img src="images/youtube.png" alt="Youtube">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/x.png" alt="Twitter">
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.jpg" alt="Facebook">
+        </a>
+      <p>&copy; <span id="year"></span>🌿Green & Grounded🌱Grow to breathe! 🍃💨💚</p> 
+      <p>Last modified: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer>  
 </body>
 </html>

@@ -1,47 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Green & Grounded</title>
-  <meta name="description" content="Explore our latest urban gardening and eco-living projects and initiatives." />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Green & Grounded boosts communities with urban gardening, 
+  sustainability education, and eco-projects, encouraging people to grow, breathe, and live a greener 
+  lifestyle every day.">
+  <meta name="author" content="Ezekwe Chioma Francisca">
+  <title>Contact | Green & Grounded</title>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"></noscript>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/project-initiatives.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/urban-n-garden.ico" type="image/x-icon">
+
+  <script src="scripts/project-initiatives.js" defer></script>
+  
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">Green & Grounded</a>
-      <ul class="nav-links">
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="project-initiatives.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header class="profile-container">
+    <div class="logo">
+      <img src="images/logo.png" alt="green and grounded logo" class="logo" loading="lazy">
+      <button id="menu-toggle" class="menu-btn">☰</button>
+    </div>
 
+    <div>
+      <nav class="navbar">
+        <button id="close-menu" class="close-btn">✖</button>
+
+        <a href="index.html" id="home-link">Home</a>
+        <a href="about-us.html" id="about-us-link">About</a>
+        <a href="project-initiatives.html" id="project-initiatives-link">Projects</a>
+        <a href="blog.html" id="blog-link">Blog</a>
+        <a href="contact-us.html" id="contact-us-link">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+ 
   <main>
     <h1>Current Initiatives</h1>
+    <div class="text-with-image">
 
-    <article class="card">
-      <h2>Balcony-to-Table Challenge</h2>
-      <p>Join our 30-day challenge to grow one meal ingredient from seed in your own space—balcony, windowsill, or rooftop.</p>
-    </article>
+      <article>
+        <img src="images/plant-by-window.jpg" alt="plant by window" class="float-left">
+        <h2>🪴🌱Balcony-to-Table Challenge I</h2>
+        <p>Join our 30-days challenge to grow one meal ingredient (without seed) 
+          in your own space— kitchen counter, balcony, windowsill, or rooftop.</p>
+        
+      </article>
+  
+      <article>
+        <img src="images/compost.webp" alt="compost" class="float-left">
+        <h2>🌿♻️Compost Across Cities</h2>
+        <p>Join our 60-days localized compost exchange bins in high-rise 
+          neighborhoods to reduce food waste and promote soil health.</p>
+      </article>
+  
+      <article>
+        <img src="images/pollination-garden.jpg" alt="pollination garden" class="float-left">
+        <h2>🌼🦋Rooftop Pollinator Gardens</h2>
+        <p>Join us, lets create a pollinator-friendly gardens on city rooftops.</p>
+      </article>
+  
+      <article>
+        <img src="images/wall-garden.webp" alt="wall garden" class="float-left">
+        <h2>🌿🌼Upcycled Vertical Garden Challenge</h2>
+        <p>Turn a wall, fence, or balcony railing into a vertical 
+          edible or ornamental garden using only upcycled or recycled materials.</p>
+      </article>
+  
+      <article>
+        <img src="images/lettuce1.jpg" alt="lettuce" class="float-left">
+        <h2>🪴🌱Balcony-to-Table Challenge II</h2>
+        <p>Join our 30-days challenge to grow one meal ingredient (without seed) 
+          in your own space— kitchen counter, balcony, windowsill, or rooftop.</p>
+      </article>
+  
+      <article>
+        <img src="images/mushrooms.jpg" alt="mushroom" class="float-left">
+        <h2>♻️🍄Kitchen Waste Farm Challenge</h2>
+        <p>Join our 36-49 days Kitchen waste mushroom farm setup</p>
+      </article>
+    </div>
 
-    <article class="card">
-      <h2>Compost Across Cities</h2>
-      <p>We're setting up localized compost exchange bins in high-rise neighborhoods to reduce food waste and promote soil health.</p>
-    </article>
+    <div class="diy-container">
 
-    <article class="card">
-      <h2>Rooftop Pollinator Gardens</h2>
-      <p>Partnering with local co-ops to create pollinator-friendly gardens on city rooftops.</p>
-    </article>
+      <section id="upload-form">
+        <h2>Share Your Progress</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter Surname First name" required>
+      
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" placeholder="Enter DIY Challenge Title" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Enter brief discription"  required></textarea>
+      
+          <label for="image">Attach Image:</label>
+          <input type="file" id="image" name="image" accept="image/jpeg, image/png, image/webp" required>
+          
+          <!-- File upload guidelines -->
+          <small>Accepted formats: JPG, PNG, WebP. Max size: 5MB.</small>
+      
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+        
+      <!-- Modals -->
+      <section class="membership-container">
+        <h2>DIY Challenges !!!</h2>
+        <div class="membership-card" id="np-card1">
+          <h3 id="dialog-title1">Balcony-to-Table Challenge I</h3>
+          <button id="openButton1">Learn More</button>
+          <dialog id="dialogBox1" aria-labelledby="dialog-title1">
+              <h2>Re-grow Lettuce from Scraps (No Seeds Needed!)</h2>
+              <p><strong>Needs🧰/ Steps 🛠️:</strong></p>
+              <ul>
+                <li>Need 1: The bottom 1–2 inches of a romaine (or butter, bibb) lettuce head.</li>
+                <li>Need 2: A shallow bowl or small dish.</li>
+                <li>Need 3: Water (tap is fine).</li>
+                <li>Need 4: Sunny windowsill or balcony or kitchen counter.</li>
+                <li>Need 5: Optional: Pot + soil for transplanting later.</li>
+                
+                <li>Step 1: Cut Your Lettuce 🔪 Eat/use most of your lettuce and leave about 2 inches of the base intact.</li>
+                <li>Step 2: Set It in Water 💧 Place the base in a shallow bowl with about ½ inch of water,let the cut side face up.</li>
+                <li>Step 3: Find Some Sun ☀️ Put the bowl near a sunny window or bright spot. Change the water every 1–2 days to prevent slime and mold.</li>
+                <li>Step 4: Watch It Grow! 🌱 Within 2–3 days, you’ll see new leaves sprouting from the center. In 5–7 days, you’ll have 1–3 inches of regrowth!</li>
+                <li>Step 5: Transplant (Optional) 🌿 Once new roots or tall leaves develop, move it into a pot with soil. Keep watering and watch it grow fuller. Harvest when leaves are 4–6 inches tall.</li>
+              </ul>
+              <p><strong>Tips 💡</strong>Don’t submerge the top — it should sit just above waterline. Use filtered/rainwater if your tap water has lots of chlorine.</p>
+              <p><strong>Share Your Progress 📸</strong>Day-by-day sprout photos, “Before & after” of your first regrowth, Lettuce tacos/salad using your regrown greens 🥗</p>
+              <button id="closeButton1" class="close-button">Close</button>
+          </dialog>
+        </div>
+    
+        <div class="membership-card" id="np-card2">
+          <h3 id="dialog-title2">Compost Across Cities</h3>
+          <button id="openButton2">Learn More</button>
+          <dialog id="dialogBox2" aria-labelledby="dialog-title2">
+              <h2>Start Your Own Balcony Compost Bin</h2>
+              <p><strong>Needs🧰/ Steps 🛠️🔁:</strong></p>
+              <ul>
+                <li>Need 1: A plastic container or old bucket with a lid (5–10 liters is enough).</li>
+                <li>Need 2: A drill or nail to make holes (for airflow).</li>
+                <li>Need 3: Dry leaves, shredded newspaper, or cardboard (carbon).</li>
+                <li>Need 4: Fruit & veggie peels, coffee grounds, eggshells (nitrogen).</li>
+                <li>Need 5: A little garden soil (to introduce microbes).</li>
+                <li>Need 6: A stick or old spoon for mixing.</li>
+                
+                <li>Step 1: Drill air holes around the lid and upper sides of the container.</li>
+                <li>Step 2: Add a layer of dry brown materials at the bottom (shredded paper/leaves).</li>
+                <li>Step 3: Layer your kitchen scraps on top (green matter). Sprinkle a handful of soil to kickstart decomposition.</li>
+                <li>Step 4: Alternate layers every few days and mix the contents once a week.</li>
+                <li>Step 5: In 4–8 weeks, you'll have rich compost to use in your urban garden pots!</li>
+              </ul>
+              <p><strong>Tips 💡</strong>Keep the bin slightly moist but not soggy.</p>
+              <p><strong>Share Your Progress 📸</strong>Take “before & after” photos of their compost bin. Record weekly progress (smell, texture, what's breaking down fastest). Share creative ways they decorated their compost bins.</p>
+              <button id="closeButton2" class="close-button">Close</button>
+          </dialog>
+        </div>
+
+        <div class="membership-card" id="np-card3">
+          <h3 id="dialog-title3">Rooftop Pollinator Gardens</h3>
+          <button id="openButton3">Learn More</button>
+          <dialog id="dialogBox3" aria-labelledby="dialog-title3">
+              <h2>Bring the Buzz to the Roof</h2>
+              <p><strong>Needs🧰/ Steps 🛠️:</strong></p>
+              <ul> 
+                <li>Need 1: Large containers or grow bags. Old buckets, crates, or pots work great.</li>
+                <li>Need 2: Potting mix with compost. Lightweight is best for rooftops.</li>
+                <li>Need 3: Native flowering plants	Think milkweed, coneflowers, lavender, marigold, salvia.</li>
+                <li>Need 4: Water source. A shallow dish with stones for bees to land on.</li>
+                <li>Need 5: (Optional) Upcycled bee hotel- Made from bamboo sticks, wood blocks, or even drilled bricks.</li> 
+                <li>Need 6: Mulch -	Helps retain moisture and protect roots.
+                
+                <li>Step 1: Plan the space. Pick a sunny spot on your rooftop or terrace with at least 6–8 hours of sunlight.</li>
+                <li>Step 2: Select plants for pollinators. Go for a mix of colors and bloom times. Use native plants when possible. Include: Early bloomers (like crocuses), Mid-season (lavender, marigolds), Late bloomers (asters, goldenrod).</li>
+                <li>Step 3: Build the containers. Fill them with compost-rich soil. Add drainage holes if needed.</li>
+                <li>Step 4: Create bee water station. Place a shallow dish with pebbles and water — pollinators need to drink too!</li>
+                <li>Step 5: Avoid pesticides. Pollinator gardens should stay organic. Use natural pest control like neem or companion planting.</li>
+                <li>Step 6: (Optional) DIY Bee Hotel - made with bundle bamboo sticks or drill holes into wood blocks to give solitary bees a nesting spot.</li>
+              </ul>
+              <p><strong>Tips 💡</strong>Mix heights and colors to attract more pollinators. Keep flowering plants close together to make it easier for pollinators to hop between them. Try adding night-blooming plants to attract moths too!</p>
+              <p><strong>Share Your Progress 📸</strong>Show before/after photos. Track pollinators visiting their garden (bees, butterflies, moths, even hummingbirds!). Share one fun fact about a plant or pollinator they observed.</p>
+              <button id="closeButton3" class="close-button">Close</button>
+          </dialog>
+        </div>
+  
+        <div class="membership-card" id="np-card4">
+          <h3 id="dialog-title4">Upcycled Vertical Garden Challenge</h3>
+          <button id="openButton4">Learn More</button>
+          <dialog id="dialogBox4" aria-labelledby="dialog-title4">
+              <h2>Edible/ Ornamental Garden Wall</h2>
+              <p><strong>Needs🧰/ Steps 🛠️:</strong></p>
+              <ul>
+                <li>Need 1: Plastic bottles, tin cans, shoe organizers, old gutters, or pallets.</li>
+                <li>Need 2: Zip ties, string, hooks, or wire.</li>
+                <li>Need 3: Scissors, hammer/nails, or a drill (depending on your materials).</li>
+                <li>Need 4: Potting soil + compost.</li>
+                <li>Need 5: Easy-to-grow plants: mint, basil, lettuce, succulents, strawberries,cabbage,spring onions.</li>
+
+                <li>Step 1: Pick your structure – a wall, balcony railing, fence, or trellis.</li>
+                <li>Step 2: Prep your planters – cut bottles/cans, poke drainage holes, paint or decorate!</li>
+                <li>Step 3: Attach vertically using hooks, zip ties, or nails.</li>
+                <li>Step 4: Add soil and plant your chosen herbs or flowers.</li>
+                <li>Step 5: Water from the top—let it trickle down!</li>
+              </ul>
+              <p><strong>Tips 💡</strong>Label your plants with hand-painted sticks or corks. Use drip irrigation from an old water bottle to keep it green with less waste!</p>
+              <p><strong>Share Your Progress 📸</strong>“Before & after” of your vertical setup. Show off your upcycled materials. Post your first harvest or bloom!</p>
+              <button id="closeButton4" class="close-button">Close</button>
+          </dialog>
+        </div>  
+
+        <div class="membership-card" id="np-card5">
+          <h3 id="dialog-title5">Balcony-to-Table Challenge II</h3>
+          <button id="openButton5">Learn More</button>
+          <dialog id="dialogBox5" aria-labelledby="dialog-title5">
+              <h2>Re-grow Basil & Mint from Cuttings</h2>
+              <p><strong>Needs🧰/ Steps 🛠️:</strong></p>
+              <ul>
+                <li>Need 1: A healthy stem of basil or mint (4–6 inches long) gotten from the grocery store or garden cuttings — no seeds, just stems!</li>
+                <li>Need 2: A small glass or jar of water.</li>
+                <li>Need 3: Sunny windowsill or balcony.</li>
+                <li>Need 4: (Optional) Small pot + soil for transplanting after rooting.</li>
+                
+                <li>Step 1: Snip the Cutting, Cut ✂️ a 4–6 inch stem from a healthy plant. Remove the bottom leaves, leaving just a few at the top.</li>
+                <li>Step 2: Place in Water 💧 Put the stem in a glass of water — only the stem should be submerged, not the leaves. Use a clear container so you can watch the roots grow.</li>
+                <li>Step 3: Find a Sunny Spot ☀️ Place the jar near a bright window (indirect light works well too). Change the water every 2–3 days to keep it fresh.</li>
+                <li>Step 4: Wait for Roots 🌱 In 5–10 days, you’ll start to see roots forming! Once roots are about 1–2 inches long, you can transplant into soil.</li>
+                <li>Step 5: Transplant (Optional) 🌿 Use a small pot with rich, well-draining soil. Water it gently and keep in a warm, bright spot.</li>
+              </ul>
+              <p><strong>Tips 💡</strong>Don’t submerge the top — it should sit just above waterline. Use filtered/rainwater if your tap water has lots of chlorine.</p>
+              <p><strong>Share Your Progress 📸</strong>Basil loves sun ☀️ at least 6 hours of sunlight daily. Mint can handle shade and grows like crazy once rooted. 
+                Don’t overcrowd — one cutting per jar is best. Also, if you're transplanting to soil, pinch the tips regularly to encourage bushy growth.</p>
+              <button id="closeButton5" class="close-button">Close</button>
+          </dialog>
+        </div>  
+
+        <div class="membership-card" id="np-card6">
+          <h3 id="dialog-title6">Kitchen Waste Farm Challenge</h3>
+          <button id="openButton6">Learn More</button>
+          <dialog id="dialogBox6" aria-labelledby="dialog-title6">
+
+            <h2>Kitchen Waste Mushroom Farm</h2>
+            <p><strong>Needs🧰/ Steps 🛠️:</strong></p>
+            <ul>
+              <li>Need 1: Used coffee grounds, damp cardboard, and mushroom spores OR a grow kit (oyster mushrooms = beginner-friendly)</li>
+              <li>Need 2: A bucket, cardboard box, or plastic tub.</li>
+              <li>Need 3: Spray bottle for misting.</li>
+              <li>Need 4: A dark, humid spot (under sink, kitchen cabinet, or closet).</li>
+
+              <li>Step 1: Layer coffee grounds/cardboard in your container.</li>
+              <li>Step 2: Add spores (from a kit or culture).</li>
+              <li>Step 3: Mist daily and keep in a dark, damp spot.</li>
+              <li>Step 4: Watch for growth in 1–2 weeks.
+              <li>Step 5: Harvest & eat when fully grown (usually within 3–4 weeks).</li>
+            </ul>
+            <p><strong>Tips 💡</strong>Use a reusable container and compost any leftover substrate after harvesting. Share your learnings on growing food from waste!</p>
+            <p><strong>Share Your Progress 📸</strong>Post your first sprout ("mushroom shoots!"). Share creative mushroom-based recipes</p>
+            <button id="closeButton6" class="close-button">Close</button>
+          </dialog>
+        </div>    
+      </section>
+    </div>
+
   </main>
-
   <footer>
-    <p>&copy; 2025 Green & Grounded</p>
-  </footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Green & Ground</h3>
+        <p>Grow to Breathe!</p>
+        <p>info@greennground.org</p>
+        <p>+234 803 758 6094</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://youtube.com" target="_blank">
+          <img src="images/youtube.png" alt="Youtube">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/x.png" alt="Twitter">
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.jpg" alt="Facebook">
+        </a>
+      <p>&copy; <span id="year"></span>🌿Green & Grounded🌱Grow to breathe! 🍃💨💚</p> 
+      <p>Last modified: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer> 
 </body>
 </html>

@@ -6,24 +6,21 @@
   <meta name="description"
       content="Green & Grounded offers guides, tips, and so many Do It Yourself ideas for sustainable urban gardening.">
   <meta name="author" content="Ezekwe Chioma Francisca">
-  <title>Green & Grounded | Urban Gardening and Sustainability</title>
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"></noscript>
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/blog.css">
   
   <!-- Favicon -->
   <link rel="icon" href="images/urban-n-garden.ico" type="image/x-icon">
 
-  <script type="module" src="scripts/index.js"></script>
-  <!-- <script type="module" src="scripts/utilities.js"></script>-->
-  
+  <script src="scripts/blog.js" defer></script>
+  <!-- <script src="scripts/thankyou.js" defer></script>-->
 </head>
-
 <body>
   <header class="profile-container">
     <div class="logo">
@@ -42,25 +39,15 @@
         <a href="contact-us.html" id="contact-us-link">Contact Us</a>
       </nav>
     </div>
- </header>
+  </header>
 
   <main>
-    <section class="hero">
-      <img src="images/gng-hero.jpg" alt="Green and Grounded hero" loading="lazy">
-      <div class=" hero-content">
-        <h1>Green & Grounded</h1>
-        <p>Your resource hub for sustainable urban living and gardening.</p>
-        <a href="blog.html" class="btn">Read Blog</a>
-      </div>      
-    </section> 
-
-    <section class="featured-guides" id="spotlights">
-      <h2>Featured Guides</h2>
-      <div id="guide-cards" class="card-container"></div>
-    </section>
-    <!-- <section id="spotlights"></section> -->
+    <h1>Latest Articles</h1>
+    <!-- Articles will be dynamically rendered here -->
+    <div id="articles-container">
+      <p>Loading latest articles...</p>
+    </div>
   </main>
- 
   <footer>
     <div class="footer">
       <div class="footer-left">
@@ -83,18 +70,7 @@
       <p>&copy; <span id="year"></span>🌿Green & Grounded🌱Grow to breathe! 🍃💨💚</p> 
       <p>Last modified: <span id="last-modified"></span></p>
       </div>
-    </div>   
-  </footer>
-   <!-- Modal -->
-
-   <dialog id="article-modal">
-    <div class="modal-content">
-      <h2 id="modal-title"></h2>
-      <p id="modal-description"></p>
-      <a id="modal-link" href="#" target="_blank" class="read-full">Read Full Article</a>
-      <button id="close-modal">Close</button>
     </div>
-  </dialog>
+  </footer>
 </body>
 </html>
-    
